@@ -8,7 +8,11 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import blockContent from './blockContent'
 import song from './song'
 import backgroundImage from './backgroundImage'
-import ssml from './ssml'
+
+import ssml from './ssml';
+import speech from './ssml-editor/speech';
+import { alias, emphasis, prosody, sayAs } from './ssml-editor/annotations';
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -21,7 +25,12 @@ export default createSchema({
     // in the studio.
     song,
     backgroundImage,
+    alias,
+    emphasis,
+    prosody,
+    sayAs,
     ssml,
+    speech,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,

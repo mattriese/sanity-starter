@@ -1,18 +1,18 @@
 export default {
   name: 'ssml',
-  title: 'SSML',
   type: 'document',
+  title: 'SSML',
   fields: [
     {
       name: 'title',
-      title: 'Title',
       type: 'string',
-      description: 'keep titles short and sweet :)'
+      title: 'Title',
+      description: 'Titles should be short and descriptive',
     },
     {
-      name: 'text',
-      title: 'text',
-      type: 'text'
-    }
-  ]
-}
+      name: 'response',
+      title: 'Response',
+      type: 'speech',
+    },
+  ],
+};
