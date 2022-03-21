@@ -18,6 +18,11 @@ export default {
       type: 'file',
       title: 'Song',
       accept: ".mp3"
+    },
+    {
+      name: 'albumCover',
+      type: 'image',
+      title:'Album Cover'
     }
   ]
 }

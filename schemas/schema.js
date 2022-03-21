@@ -11,6 +11,7 @@ import backgroundImage from './backgroundImage'
 
 import ssml from './ssml';
 import speech from './ssml-editor/speech';
+import textSsml from './textSsml'
 import { alias, emphasis, prosody, sayAs } from './ssml-editor/annotations';
 
 
@@ -24,6 +25,7 @@ export default createSchema({
     // The following are ------document types*------ which will appear
     // in the studio.
     song,
+    textSsml,
     backgroundImage,
     alias,
     emphasis,
